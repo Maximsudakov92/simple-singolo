@@ -34,7 +34,7 @@ header {
 
 .nav>li {
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .nav>li>a {
@@ -48,6 +48,7 @@ span.logo {
 
 .wrapper>h1 {
   font-size: 25px;
+  text-transform: uppercase;
 }
 
 hr {
@@ -66,32 +67,85 @@ hr {
 /*------------SLIDER-------------*/
 
 .slider {
-  max-width: 1020px;
-  background-color: #F06C64;
+  width: 1020px;
+
 }
 
-.wrapper {
-  max-width: 940px;
+.slider-container {
+  overflow: hidden;
+  background-color: #648BF0;
+  ;
+}
+
+.slider-track {
   display: flex;
-  justify-content: space-around;
+  transition: .5s;
 }
 
-.phone-image-1 {
-  display: block;
-  width: 240px;
-  height: 483px;
-  margin-top: 54px;
-  margin-bottom: 57px;
-  background-image: url(../img/phone/phone-vertical.svg);
+.slider-item {
+  height: 600px;
 }
 
-.phone-image-2 {
-  display: block;
-  width: 483px;
-  height: 240px;
-  background-image: url(../img/phone/phone-horizontal.svg);
+.slider-item:first-child {
+  background-image: url(/img/phone/Slider.svg);
 }
+
+.slider-item:last-child {
+  background-image: url(/img/phone/Slide-2.svg);
+}
+
+.slider-buttons {
+  max-width: 940px;
+  top: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.btn-prev {
+  background-image: url(/img/phone/arrow-left.svg);
+  height: 27px;
+  width: 16px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-next {
+  background-image: url(/img/phone/arrow-right.svg);
+  height: 27px;
+  width: 16px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .border-slider {
   background-color: #EA676B;
+  display: flex;
+  align-items: flex-end;
 }
