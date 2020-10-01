@@ -109,6 +109,7 @@ hr {
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   left: 50px;
+  cursor: pointer;
 }
 
 .btn-next {
@@ -119,6 +120,7 @@ hr {
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   right: -968px;
+  cursor: pointer;
 }
 
 
