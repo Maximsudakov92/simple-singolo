@@ -135,7 +135,6 @@ hr {
 .services {
   width: 1020px;
   height: 500px;
-  position: absolute;
   background-color: #F2F2F2;
   color: #666D89;
   font-size: 18px;
@@ -186,7 +185,30 @@ hr {
   width: 60px;
   align-self: center;
   margin: 0 auto;
+}
+
+.img-item.one {
   background-image: url(/img/OurServices/services-item-1.svg);
+}
+
+.img-item.two {
+  background-image: url(/img/OurServices/services-item-2.svg);
+}
+
+.img-item.three {
+  background-image: url(/img/OurServices/services-item-3.svg);
+}
+
+.img-item.four {
+  background-image: url(/img/OurServices/services-item-4.svg);
+}
+
+.img-item.five {
+  background-image: url(/img/OurServices/services-item-5.svg);
+}
+
+.img-item.six {
+  background-image: url(/img/OurServices/services-item-6.svg);
 }
 
 .services-border {
@@ -194,4 +216,107 @@ hr {
   background-color: red;
   width: 1020px;
   margin: 0 auto;
+}
+
+
+/*------------PORTFOLIO-------------*/
+
+.portfolio {
+  width: 1020px;
+  height: 878px;
+  background-color: #2D303A;
+  color: #666D89;
+}
+
+.portfolio-header {
+  max-width: 940px;
+  margin: 0 auto;
+  padding-top: 59px;
+}
+
+.portfolio-header h3 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 0px;
+}
+
+.portfolio-header p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter-list ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.filter-list li {
+  border: 1px solid #767E9E;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.portfolio-items {
+  height: 187px;
+  width: 220px;
+}
+
+.portfolio-items.one {
+  background-image: url(/img/Portfolio/portfolio-1.png);
+}
+
+.portfolio-items.two {
+  background-image: url(/img/Portfolio/portfolio-2.png);
+}
+
+.portfolio-items.three {
+  background-image: url(/img/Portfolio/portfolio-3.png);
+}
+
+.portfolio-items.four {
+  background-image: url(/img/Portfolio/portfolio-4.png);
+}
+
+.portfolio-items.five {
+  background-image: url(/img/Portfolio/portfolio-5.png);
+}
+
+.portfolio-items.six {
+  background-image: url(/img/Portfolio/portfolio-6.png);
+}
+
+.portfolio-items.seven {
+  background-image: url(/img/Portfolio/portfolio-7.png);
+}
+
+.portfolio-items.eight {
+  background-image: url(/img/Portfolio/portfolio-8.png);
+}
+
+.portfolio-items.nine {
+  background-image: url(/img/Portfolio/portfolio-9.png);
+}
+
+.portfolio-items.ten {
+  background-image: url(/img/Portfolio/portfolio-10.png);
+}
+
+.portfolio-items.eleven {
+  background-image: url(/img/Portfolio/portfolio-11.png);
+}
+
+.portfolio-items.twelve {
+  background-image: url(/img/Portfolio/portfolio-12.png);
+}
+
+.portfolio-wrapper {
+  grid-template-rows: repeat(3, 204px);
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
 }
