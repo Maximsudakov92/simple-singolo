@@ -320,3 +320,53 @@ hr {
   display: grid;
   grid-template-columns: repeat(4, 240px);
 }
+
+
+
+/*------------FOOTER-------------*/
+
+
+footer {
+  width: 1020px;
+  height: 76px;
+  background: #2D303A;
+  color: #666D89;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.footer-wrapper {
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social-buttons li {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  color: #666D89;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.social-buttons {
+  display: flex;
+}
+
+.fb {
+  background-image: url(/img/footer/ico-facebook.svg);
+}
+
+.google {
+  background-image: url(/img/footer/ico-google-plus.svg);
+}
+
+.twitter {
+  background-image: url(/img/footer/ico-twitter.svg);
+}
+
+.linkedin {
+  background-image: url(/img/footer/ico-linkedin.svg);
+}
