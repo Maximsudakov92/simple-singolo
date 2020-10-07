@@ -28,13 +28,25 @@ header {
   text-transform: uppercase;
 }
 
-.list-style {
+.nav>li {
   list-style-type: none;
 }
 
-.nav>li {
-  margin-left: 10px;
-  margin-right: 15px;
+.nav li:after {
+  content: '•';
+  position: relative;
+  bottom: 2px;
+  margin: 0 7px;
+  font-size: 6px;
+  color: #FFFFFF;
+}
+
+.nav li:last-child:after {
+  content: "";
+}
+
+.nav>li>a:hover {
+  color: #F06C64;
 }
 
 .nav>li>a {
@@ -161,10 +173,11 @@ hr {
 }
 
 .services-item {
-  height: 104px;
+  height: 109px;
   width: 300px;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .text-item h3 {
@@ -250,6 +263,10 @@ hr {
   list-style-type: none;
 }
 
+.filter-list>ul>li:hover {
+  color: #F06C64;
+}
+
 .filter-list li {
   border: 1px solid #767E9E;
   border-radius: 5px;
@@ -263,6 +280,10 @@ hr {
 .portfolio-items {
   height: 187px;
   width: 220px;
+}
+
+.portfolio-items:nth-child(1n + 13) {
+  display: none;
 }
 
 .portfolio-items.one {
@@ -314,11 +335,12 @@ hr {
 }
 
 .portfolio-wrapper {
-  grid-template-rows: repeat(3, 204px);
   max-width: 940px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 240px);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 
